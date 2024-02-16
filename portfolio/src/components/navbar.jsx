@@ -1,21 +1,31 @@
-import React from 'react'
+
 import "./navbarStyling.css"
+import { Link } from 'react-router-dom'
+import { FaBars } from "react-icons/fa"
+import { FaTimes } from 'react-icons/fa'
+import React, { userState } from "react"
+
 
 
 
 const navbar = () => {
+
+
   return (
     <nav className="navbar">
-      <div className='navbar-logo'>
-        <img src='./Assets/logo.jpg' />
-      </div>
+      <Link to={"/"}>
+        <div className='navbar-logo'>
+          <img src='./Assets/logo.jpg' />
+        </div> </Link>
       <ul className='nav-menu'>
-        <li>ABOUT</li>
+        <Link to={"/About"}><li>ABOUT</li></Link>
+        <Link to={"/Project"}><li>PROJECT</li></Link>
         <li>GALLERY</li>
-        <li>PROJECT</li>
-        <li>CONTACT</li>
+        <Link to={"/Contact"}><li>CONTACT</li></Link>
       </ul>
-
+      <div className='hamburger'>
+        <FaBars size={30} /> <FaTimes size={30} />
+      </div>
     </nav>
   )
 }

@@ -28,6 +28,15 @@
 
 }
 
+
+.nav-menu a {
+  color: black;
+}
+
+.hamburger {
+  display: none;
+}
+
 .navbar-logo img {
   height: 13rem;
   width: 12rem;
@@ -40,7 +49,7 @@
 }
 
 
-@media screen and (max-width: 1040px) {
+@media screen and (max-width: 1500px) {
   .nav-menu {
     flex-direction: column;
     justify-content: center;
@@ -56,5 +65,9 @@
   .nav-menu li {
     padding: 1rem 0;
     font-size: 2rem;
+  }
+
+  .hamburger {
+    display: initial;
   }
 }
