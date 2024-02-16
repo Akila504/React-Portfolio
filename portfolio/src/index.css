@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+h1,
+h4,
+p,
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* button class */
+.btn {
+  padding: 10px 12px;
+  border: 2px solid black;
+  font-size: 2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+.btn:hover {
+  background: #e7e7e7;
+  ;
+
+}
+
+
+.default {
+  border-color: #e7e7e7;
+  color: black;
+}
+
+/* button class end */

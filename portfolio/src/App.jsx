@@ -1,28 +1,25 @@
-
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import React from 'react'
-import Home from "./routes/Home"
-import About from "./routes/About"
-import Project from './routes/Project'
-import Contact from './routes/Contact'
-import { Route, Routes } from 'react-router-dom'
+import Home from './Pages/Home.jsx'
+import Navbar from './components/navbar.jsx'
+import About from './Pages/About.jsx'
+import Project from './Pages/Project.jsx'
+import Contact from './Pages/Contact.jsx'
 
 
 function App() {
-
   return (
-    <>
-      <div>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/" element={<About />} />
-          <Route path="/" element={<Project />} />
-          <Route path="/" element={<Contact />} />
-
-        </Routes>
-      </div>
-    </>
-  )
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Project" element={<Project />} />
+        <Route path="/Contact" element={<Contact />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
 
+export default App;
