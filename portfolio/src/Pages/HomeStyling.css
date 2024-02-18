@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+
+}
+
+body {
+  height: 10vh;
+  background: linear-gradient(to right,
+      white 0%,
+      white 50%,
+      black 50%,
+      black 100%);
+
+
+}
+
+.box {
+  margin: 150px 30px;
+  padding-top: 150px;
+  /* margin-right: 65px; */
+  display: flex;
+  width: 90vh;
+  height: 90vh;
+  display: flex;
+  border: solid;
+  border-color: red;
+  position: relative;
+  float: right;
+}
+
+
+.landingPage {
+  padding: 25% 10%;
+  color: red;
+  justify-content: center;
+  text-align: left;
+}
