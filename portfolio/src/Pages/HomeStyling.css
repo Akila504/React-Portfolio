@@ -45,6 +45,13 @@ body {
 }
 
 
+.contact-details {
+  position: absolute;
+  top: 59%;
+  cursor: pointer;
+  padding: 4em 4em;
+}
+
 
 .heroImg {
   animation: morph 8s ease-in-out infinite;
@@ -89,7 +96,7 @@ body {
   border-bottom-right-radius: 30% 70%;
   border-bottom-left-radius: 70% 40%;
   height: 35rem;
-  position: absolute;
+  position: relative;
   transition: all 1s ease-in-out;
   transition-behavior: normal;
   transition-duration: 1s;
@@ -97,6 +104,13 @@ body {
   transition-delay: 0s;
   transition-property: all;
   width: 35rem;
+}
+
+.cv {
+  position: relative;
+  top: 6rem;
+  left: 5rem;
+  text-align: center;
 }
 
 

@@ -34,7 +34,13 @@ const navbar = () => {
         <Link style={{ color: "white" }}><li >GALLERY</li></Link>
         <Link to={"/Contact"} style={{ color: "white" }}><li>CONTACT</li></Link>
       </ul>
-      <div className="colorModeicon" onClick={handlesetcolorMode} > {colorMode ? (<FaRegMoon size={40} style={{ justifyContent: "center" }} />) : (<FaRegSun size={40} />)}</div>
+      <div className="colorModeicon" onClick={handlesetcolorMode} > {colorMode ? (<FaRegMoon size={40} style={{
+        justifyContent: "center",
+        color: "white"
+      }} />) : (<FaRegSun size={40} style={{
+        justifyContent: "center",
+        color: "white"
+      }} />)}</div>
       <div className='hamburger' style={{ color: "white" }} onClick={handleSetDisplayclick}>
         {display ? (<FaBars size={50} />) : (<FaTimes size={50} />)}
       </div>
