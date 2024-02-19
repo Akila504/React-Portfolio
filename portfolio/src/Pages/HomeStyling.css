@@ -16,17 +16,86 @@ body {
 }
 
 .box {
-  margin: 150px 30px;
-  padding-top: 150px;
-  /* margin-right: 65px; */
+  margin: 250px 30px;
+  /* padding-bottom: 100px 0px; */
   display: flex;
   width: 90vh;
-  height: 90vh;
+  height: 65vh;
   display: flex;
   border: solid;
   border-color: red;
-  position: relative;
-  float: right;
+  position: absolute;
+  /* float: right; */
+  /* top: 0%; */
+  left: 50.5%;
+}
+
+
+.subBox {
+  position: absolute;
+  left: 25%;
+  top: 35%;
+  height: 200px;
+  margin-top: -100px;
+  /* half of you height */
+  width: 400px;
+  margin-left: -200px;
+  /* half of you width */
+}
+
+
+
+.heroImg {
+  animation: morph 8s ease-in-out infinite;
+  animation-duration: 8s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: morph;
+  animation-timeline: auto;
+  animation-range-start: normal;
+  animation-range-end: normal;
+  background-image: url(".//../assets/profile.jpeg");
+  background-position: 50%;
+  background-position-x: 50%;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 3px solid #2d2e32;
+  border-top-width: 3px;
+  border-right-width: 3px;
+  border-bottom-width: 3px;
+  border-left-width: 3px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-top-color: rgb(45, 46, 50);
+  border-right-color: rgb(45, 46, 50);
+  border-bottom-color: rgb(45, 46, 50);
+  border-left-color: rgb(45, 46, 50);
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  border-top-left-radius: 60%;
+  border-top-right-radius: 40% 30%;
+  border-bottom-right-radius: 30% 70%;
+  border-bottom-left-radius: 70% 40%;
+  height: 35rem;
+  position: absolute;
+  transition: all 1s ease-in-out;
+  transition-behavior: normal;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+  transition-property: all;
+  width: 35rem;
 }
 
 
@@ -35,4 +104,22 @@ body {
   color: red;
   justify-content: center;
   text-align: left;
+  position: absolute;
+  bottom: -20%;
+}
+
+
+@keyframes morph {
+
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
 }

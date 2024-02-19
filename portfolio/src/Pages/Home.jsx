@@ -4,6 +4,9 @@ import './HomeStyling.css'
 const Home = () => {
   return (
     <>
+      <div className='subBox'>
+        <div className='heroImg'></div>
+      </div>
       <div className='box'>
         <div className='landingPage'>
           <h1 style={{ fontSize: "6em" }} >Hi</h1>
