@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
 
+
 }
 
 body {
@@ -104,8 +105,8 @@ body {
   color: red;
   justify-content: center;
   text-align: left;
-  position: absolute;
-  bottom: -20%;
+  position: relative;
+  top: -25%;
 }
 
 

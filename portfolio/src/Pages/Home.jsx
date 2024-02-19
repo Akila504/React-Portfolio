@@ -1,6 +1,7 @@
 import React from 'react'
 import './HomeStyling.css'
 
+
 const Home = () => {
   return (
     <>
