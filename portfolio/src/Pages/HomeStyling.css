@@ -1,56 +1,65 @@
-* {
-  padding: 0;
-  margin: 0;
-
-
-}
-
 body {
   height: 10vh;
+  width: 100%;
   background: linear-gradient(to right,
       white 0%,
       white 50%,
       black 50%,
       black 100%);
-
-
-}
-
-.box {
-  margin: 250px 30px;
-  /* padding-bottom: 100px 0px; */
-  display: flex;
-  width: 90vh;
-  height: 65vh;
-  display: flex;
-  border: solid;
-  border-color: red;
-  position: absolute;
-  /* float: right; */
-  /* top: 0%; */
-  left: 50.5%;
 }
 
 
-.subBox {
-  position: absolute;
-  left: 25%;
-  top: 35%;
-  height: 200px;
-  margin-top: -100px;
-  /* half of you height */
-  width: 400px;
-  margin-left: -200px;
-  /* half of you width */
+
+.main {
+  height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
 }
 
 
 .contact-details {
   position: absolute;
-  top: 59%;
+  top: 40%;
   cursor: pointer;
   padding: 4em 4em;
 }
+
+
+.box {
+  position: absolute;
+  top: 30%;
+  width: 35vw;
+  height: 45vh;
+  border: solid;
+  border-color: red;
+  left: 50.5%;
+}
+
+
+.intro {
+  font-size: 2.5rem;
+  color: red;
+  position: absolute;
+  text-align: center;
+}
+
+
+.subBox {
+  position: absolute;
+  left: 15%;
+  top: 50%;
+  height: 45vh;
+  width: 35vw;
+}
+
+.cv {
+  position: absolute;
+  top: 47%;
+  left: 30%;
+  text-align: center;
+}
+
 
 
 .heroImg {
@@ -73,55 +82,19 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   border: 3px solid #2d2e32;
-  border-top-width: 3px;
-  border-right-width: 3px;
-  border-bottom-width: 3px;
-  border-left-width: 3px;
-  border-top-style: solid;
-  border-right-style: solid;
-  border-bottom-style: solid;
-  border-left-style: solid;
-  border-top-color: rgb(45, 46, 50);
-  border-right-color: rgb(45, 46, 50);
-  border-bottom-color: rgb(45, 46, 50);
-  border-left-color: rgb(45, 46, 50);
-  border-image-source: initial;
-  border-image-slice: initial;
-  border-image-width: initial;
-  border-image-outset: initial;
-  border-image-repeat: initial;
-  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-  border-top-left-radius: 60%;
-  border-top-right-radius: 40% 30%;
-  border-bottom-right-radius: 30% 70%;
-  border-bottom-left-radius: 70% 40%;
-  height: 35rem;
-  position: relative;
+  position: absolute;
   transition: all 1s ease-in-out;
   transition-behavior: normal;
   transition-duration: 1s;
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
   transition-property: all;
-  width: 35rem;
+  height: 35vh;
+  width: 20vw;
+  bottom: 60%;
+  left: 17%;
 }
 
-.cv {
-  position: relative;
-  top: 6rem;
-  left: 5rem;
-  text-align: center;
-}
-
-
-.landingPage {
-  padding: 25% 10%;
-  color: red;
-  justify-content: center;
-  text-align: left;
-  position: relative;
-  top: -25%;
-}
 
 
 @keyframes morph {
