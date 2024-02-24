@@ -9,6 +9,7 @@ import Contact from './Pages/Contact.jsx'
 
 function App() {
   return (
+
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />

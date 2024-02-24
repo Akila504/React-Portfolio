@@ -51,11 +51,16 @@
 .colorModeicon {
   position: relative;
   right: 25px;
+  color: white;
 }
 
 @media screen and (max-width: 1100px) {
-  .nav-menu {
+  .navbar {
+    background-color: white;
+  }
 
+
+  .nav-menu {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -66,6 +71,7 @@
     left: -100%;
     z-index: -3;
     transition: 0.3s;
+    background-color: white;
 
   }
 
@@ -85,21 +91,34 @@
 
   .colorModeicon {
     position: relative;
-
+    color: black;
     right: 50px;
   }
 
   .hamburger {
     display: initial;
 
+
   }
 }
 
 
 
-@media screen and (max-width: 500px) {
-  .nav-menu {
+@media screen and (max-width: 600px) {
+  .navbar-logo img {
+    left: 0%;
+    height: 9rem;
+    width: 9rem;
+    padding: 1rem 1rem;
+  }
 
+
+
+  .navbar {
+    background-color: white;
+  }
+
+  .nav-menu {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -114,6 +133,10 @@
   }
 
 
+  .colorModeicon {
+    color: black;
+
+  }
 
   .nav-menu.unactive {
     left: 0;
@@ -128,6 +151,7 @@
 
   .hamburger {
     display: initial;
+
   }
 
 }

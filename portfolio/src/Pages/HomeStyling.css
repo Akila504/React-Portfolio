@@ -1,5 +1,5 @@
 body {
-  height: 10vh;
+  /* height: 10vh; */
   width: 100%;
   background: linear-gradient(to right,
       white 0%,
@@ -20,9 +20,10 @@ body {
 
 .contact-details {
   position: absolute;
-  top: 40%;
+  font-size: 50px;
+  top: 45%;
+  left: 2.5%;
   cursor: pointer;
-  padding: 4em 4em;
 }
 
 
@@ -30,7 +31,7 @@ body {
   position: absolute;
   top: 30%;
   width: 35vw;
-  height: 45vh;
+  height: 55vh;
   border: solid;
   border-color: red;
   left: 50.5%;
@@ -56,7 +57,7 @@ body {
 .cv {
   position: absolute;
   top: 47%;
-  left: 30%;
+  left: 25%;
   text-align: center;
 }
 
@@ -110,4 +111,137 @@ body {
   100% {
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   }
+}
+
+
+
+
+
+@media screen and (max-width: 1100px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: white
+  }
+
+  .main {
+    height: 100vh;
+    margin: 0 auto;
+    overflow-y: visible;
+    position: relative;
+  }
+
+  .contact-details {
+    display: flex;
+    font-size: 10vw;
+    top: 5%;
+    left: 0%;
+    right: 0%;
+    gap: 9rem;
+    justify-content: space-evenly;
+    cursor: pointer;
+    padding: 4em 4em;
+  }
+
+
+  .box {
+    display: block;
+    left: 10%;
+    top: 100%;
+    width: 85vw;
+    height: 75vh;
+    border: solid;
+    border-color: red;
+  }
+
+  .intro {
+    display: block;
+    font-size: 3rem;
+    color: red;
+    top: 10%;
+    text-align: center;
+  }
+
+  .subBox {
+    display: block;
+    top: 70%;
+    left: 15%;
+  }
+
+  .heroImg {
+    width: 60vw;
+  }
+
+  .cv {
+    left: 55%;
+    width: 35vw;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: white 0%,
+
+  }
+
+  .main {
+    height: 100vh;
+    margin: 0 auto;
+    overflow-y: visible;
+    position: relative;
+  }
+
+  .contact-details {
+    display: flex;
+    font-size: 9vw;
+    top: 15%;
+    left: 0%;
+    right: 0%;
+    gap: 5rem;
+    justify-content: space-evenly;
+    cursor: pointer;
+    padding: 4em 4em;
+  }
+
+
+  .box {
+    display: block;
+    left: 10%;
+    top: 110%;
+    width: 85vw;
+    height: 75vh;
+    border: solid;
+    border-color: red;
+  }
+
+  .intro {
+    display: block;
+    font-size: 1.7rem;
+    color: red;
+    top: 12%;
+    text-align: center;
+  }
+
+  .subBox {
+    display: block;
+    top: 65%;
+    left: 13%;
+  }
+
+  .heroImg {
+    width: 60vw;
+  }
+
+  .cv {
+    font-size: 0.5rem;
+    width: 70vw;
+    left: 0%;
+    right: 0%;
+  }
+
 }

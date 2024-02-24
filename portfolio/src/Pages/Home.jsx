@@ -10,9 +10,9 @@ const Home = () => {
   return (
     <section className='main'>
       <div className='contact-details'>
-        <div style={{ paddingBottom: 40 }}> <FaGithub size={50} /> </div>
-        <div style={{ paddingBottom: 40 }}>  <FaLinkedin size={50} /> </div>
-        <div > <MdAttachEmail size={50} />  </div>
+        <div className='icons' style={{ paddingBottom: 40 }}> <FaGithub /> </div>
+        <div className='icons' style={{ paddingBottom: 40 }}>  <FaLinkedin /> </div>
+        <div className='icons'> <MdAttachEmail />  </div>
       </div>
       <div className='box'>
         <div className='intro'>
