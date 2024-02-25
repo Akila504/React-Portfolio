@@ -56,7 +56,7 @@ body {
 
 .cv {
   position: absolute;
-  top: 47%;
+  top: 80%;
   left: 25%;
   text-align: center;
 }
@@ -90,9 +90,9 @@ body {
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
   transition-property: all;
-  height: 35vh;
+  height: 55vh;
   width: 20vw;
-  bottom: 60%;
+  bottom: 25%;
   left: 17%;
 }
 
@@ -135,13 +135,13 @@ body {
   .contact-details {
     display: flex;
     font-size: 10vw;
-    top: 5%;
+    top: 4%;
     left: 0%;
     right: 0%;
     gap: 9rem;
     justify-content: space-evenly;
     cursor: pointer;
-    padding: 4em 4em;
+    padding: 2.5em 2.5em;
   }
 
 
@@ -170,15 +170,23 @@ body {
   }
 
   .heroImg {
+    height: 40vh;
     width: 60vw;
+    bottom: 65%;
   }
 
   .cv {
     left: 55%;
     width: 35vw;
+    top: 45%;
   }
 
 }
+
+
+
+
+
 
 @media screen and (max-width: 600px) {
   body {
@@ -198,15 +206,16 @@ body {
 
   .contact-details {
     display: flex;
-    font-size: 9vw;
+    font-size: 11vw;
     top: 15%;
     left: 0%;
     right: 0%;
     gap: 5rem;
     justify-content: space-evenly;
     cursor: pointer;
-    padding: 4em 4em;
+    padding: 2.5em 2.5em;
   }
+
 
 
   .box {
@@ -234,14 +243,17 @@ body {
   }
 
   .heroImg {
+    height: 40vh;
     width: 60vw;
+    bottom: 60%;
+    left: 17%;
   }
 
   .cv {
     font-size: 0.5rem;
-    width: 70vw;
-    left: 0%;
-    right: 0%;
+    top: 50%;
+    width: 75vw;
+    left: 3%;
   }
 
 }
