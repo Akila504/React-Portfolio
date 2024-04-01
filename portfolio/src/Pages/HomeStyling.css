@@ -8,19 +8,29 @@ body {
       black 100%);
 }
 
+a .icons {
+  color: black;
+  /* Use the color inherited from the parent */
+  text-decoration: none;
+  /* Remove underline */
+}
 
+a .cv {
+  color: black;
+}
 
 .main {
+
   height: 100vh;
   margin: 0 auto;
-  overflow: hidden;
+  overflow-y: auto;
   position: relative;
 }
 
 
 .contact-details {
   position: absolute;
-  font-size: 50px;
+  font-size: 60px;
   top: 45%;
   left: 2.5%;
   cursor: pointer;
@@ -32,9 +42,9 @@ body {
   top: 30%;
   width: 35vw;
   height: 55vh;
-  border: solid;
-  border-color: red;
-  left: 50.5%;
+  border: none;
+  border-color: black;
+  left: 57%;
 }
 
 
@@ -43,6 +53,7 @@ body {
   color: red;
   position: absolute;
   text-align: center;
+  top: 10%;
 }
 
 
@@ -57,7 +68,7 @@ body {
 .cv {
   position: absolute;
   top: 80%;
-  left: 25%;
+  left: 30%;
   text-align: center;
 }
 
@@ -76,7 +87,7 @@ body {
   animation-timeline: auto;
   animation-range-start: normal;
   animation-range-end: normal;
-  background-image: url(".//../assets/profile.jpeg");
+  background-image: url(".//../assets/profile2.jpg");
   background-position: 50%;
   background-position-x: 50%;
   background-position-y: center;
@@ -135,7 +146,7 @@ body {
   .contact-details {
     display: flex;
     font-size: 10vw;
-    top: 4%;
+    top: 6%;
     left: 0%;
     right: 0%;
     gap: 9rem;
@@ -207,7 +218,7 @@ body {
   .contact-details {
     display: flex;
     font-size: 11vw;
-    top: 15%;
+    top: 13%;
     left: 0%;
     right: 0%;
     gap: 5rem;
@@ -256,4 +267,13 @@ body {
     left: 3%;
   }
 
+}
+
+.btn {
+  padding: 10px 12px;
+  border: 2px solid black;
+  font-size: 2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 5px;
 }

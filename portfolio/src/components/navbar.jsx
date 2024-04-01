@@ -23,15 +23,15 @@ const navbar = () => {
 
 
   return (
-    <nav className="navbar">
+    <div className="navbarA">
       <Link to={"/"}>
         <div className='navbar-logo'>
           <img src='./Assets/logo2.jpg' />
         </div> </Link>
-      <ul className={display ? "nav-menu" : "nav-menu unactive"}>
+      <ul className={display ? "nav-menuA" : "nav-menuA unactive"}>
+        <Link to={"/"}><li>HOME</li></Link>
         <Link to={"/About"}><li>ABOUT</li></Link>
-        <Link to={"/Project"}><li className="test">PROJECT</li></Link>
-        <Link style={{ color: "white" }}><li >GALLERY</li></Link>
+        <Link to={"/Project"} style={{ color: "white" }}><li className="test">PROJECT</li></Link>
         <Link to={"/Contact"} style={{ color: "white" }}><li>CONTACT</li></Link>
       </ul>
       <div className="colorModeicon" onClick={handlesetcolorMode} > {colorMode ? (<FaRegMoon size={40} style={{
@@ -44,7 +44,7 @@ const navbar = () => {
         {display ? (<FaBars size={50} />) : (<FaTimes size={50} />)}
       </div>
 
-    </nav>
+    </div>
   )
 }
 
